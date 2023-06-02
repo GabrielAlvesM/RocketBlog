@@ -1,0 +1,199 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@100;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root {
+    --purple-bg: #290742;
+    --dark-bg: #170027;
+    --button-bg: #9e6dc2;
+    --white: #fff;
+    --light-purple: #fbf6ff;
+    --green: #4fff4b;
+    --fontPoppins:'Poppins', sans-serif;
+    --fontRoboto: 'Roboto', sans-serif;
+}
+body{
+    width: 100vw;
+    background-color: #ffffff;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 85vh;
+    width: 100%;
+    background-color: var(--purple-bg);
+    background-attachment: fixed;
+    border-bottom: 7px solid var(--green);
+    
+}
+header section.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5rem;
+}
+header section.menu img.logo{
+    padding-left: 2rem;
+}
+header section.menu nav.menu {
+    display:flex;
+    flex-direction: row;
+    align-items: center ;
+    justify-content: space-between;
+    padding-right: 3rem;
+    gap: 2rem;
+}
+
+header section.menu nav.menu ul.listMenu{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    list-style: none;
+    gap: 3rem;
+    color: #ffffff;
+    font-family: var(--fontRoboto);
+    position: relative;
+}
+header section.menu nav.menu ul.listMenu::before{
+    content: "";
+    position: absolute;
+    margin-left: -10px;
+    width: 3px;
+    height: 16px;
+    background-color: #4fff4b;
+}
+header section.menu nav.menu ul.listMenu li:first-child{
+    font-weight: bold;
+}
+header section.menu nav.menu ul.listMenu li a{
+    color: #ffffff;
+}
+header section.menu nav.menu ul.listMenu li a:hover{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+header section.menu nav.searchBar{
+    display: flex;
+    align-items: center;
+    margin-right: 5.5rem;
+    gap: 1rem;
+}
+header section.menu nav.searchBar input[type=search]{
+    width: 200px;
+    height: 30px;
+    background-color: var(--dark-bg);
+    color: white;
+    padding-left: 25px;
+    font-family: var(--fontRoboto);
+    font-weight: bold;
+    border: none;
+}
+header section.menu nav.searchBar label{
+    background-color: var(--button-bg);
+    color: #ffffff;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    margin: -14px ;
+}
+header section.menu nav.searchBar label:hover{
+    background-color: #b89ccc;
+    cursor: pointer;
+}
+header section.menuContent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} 
+
+header section.menuContent div.menuContentWritten{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+    flex: 2;
+}
+header section.menuContent div.menuContentWritten h1{
+    color: var(--button-bg);
+    font-size: 2.5rem;
+    font-family: var(--fontPoppins);
+}
+header section.menuContent div.menuContentWritten p{
+    color: white;
+    font-family: var(--fontRoboto);
+    font-size: 1em;
+    font-weight: 400;
+}
+header  section.menuContent div.menuContentWritten a{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--button-bg);
+}
+header section.menuContent div.menuContentWritten i{
+    color: var(--green);
+}
+header  section.menuContent div.menuContentWritten a:hover{
+    text-shadow: 0.1px 0.1px #efe9f3a9;
+    transform: translateY(5px);
+}
+header .featureadImg{
+    align-self: center;
+    padding: 4rem;
+    height: 30rem;
+    flex: 1;
+}
+
+main section.posts{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    padding-top: 20px;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin:  35px;
+}
+
+main section.posts h2{
+    font-family: var(--fontRoboto);
+}
+main section.posts p, span{
+    font-family: var(--fontRoboto);
+    text-align: justify;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+main section.posts div.upSide{
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    margin-left: -13rem;
+}
+main section.posts div.upSide div.post1 img{
+    width: 550px;
+}
+main section.posts div.upSide div.post1 h2, p{
+    width: 550px;
+}
+main section.posts div.upSide div.sidePost p, h2{
+    width: 300px;
+    
+}
+main section.posts div.bottomSide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+main section.posts div.bottomSide div p, h2, span{
+    width: 300px;
+}
